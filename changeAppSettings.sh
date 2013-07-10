@@ -1211,6 +1211,8 @@ else
 fi
 
 cat project/java/dune2/adv/AdvertismentSystem.java >> project/src/AdvertismentSystem.java
+cat project/java/dune2/sound/SoundSystem.java >> project/src/SoundSystem.java
+
 
 if [ "$AppRecordsAudio" = "n" -o -z "$AppRecordsAudio" ] ; then
 	$SEDI "/==RECORD_AUDIO==/ d" project/AndroidManifest.xml
